@@ -1,212 +1,214 @@
-const deck = [{
+const deck = [
+  {
     value: 11,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 10,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 8,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 6,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 4,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 9,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 4,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 6,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 13,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 13,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 6,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 4,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 11,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 7,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 8,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 5,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 8,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 2,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 12,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 9,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 13,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 3,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 5,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 12,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 1,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 2,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 3,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 2,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 9,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 5,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 7,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 11,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 12,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 7,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 6,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 10,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 1,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 12,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 10,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 13,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 1,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 7,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 3,
-    suit: "♤"
+    suit: "♤",
   },
   {
     value: 5,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 9,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 8,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 11,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 4,
-    suit: "♧"
+    suit: "♧",
   },
   {
     value: 2,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 10,
-    suit: "♢"
+    suit: "♢",
   },
   {
     value: 1,
-    suit: "♡"
+    suit: "♡",
   },
   {
     value: 3,
-    suit: "♡"
-  }
+    suit: "♡",
+  },
 ];
 /*
 Sort the deck of cards so that it becomes [1,1,1,1,2,2...]
 */
+deck.sort((a, b) => a.value - b.value);
