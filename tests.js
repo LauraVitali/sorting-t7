@@ -74,6 +74,8 @@ function test() {
     }
   }, 300)
 
+
+
   function validate() {
     const copy = [...deck];
     copy.sort((a, b) => a - b);
@@ -91,3 +93,5 @@ function test() {
     }
   }
 }
+
+
