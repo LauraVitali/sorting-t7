@@ -1,4 +1,4 @@
-const deck = [
+ const deck = [
   {
     value: 11,
     suit: "♤",
@@ -211,3 +211,17 @@ const deck = [
 /*
 Sort the deck of cards so that it becomes [1,1,1,1,2,2...]
 */
+
+function compare(a,b) {
+    if (a.value < b.value) {
+        return -1;
+    }
+
+    if (a.value > b.value) {
+        return 1;
+    }
+
+    return 0;
+}
+
+deck.sort(compare);
